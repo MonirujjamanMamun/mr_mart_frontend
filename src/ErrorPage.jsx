@@ -36,7 +36,12 @@ const ErrorPage = () => {
     }
   }
 
-  return <div>Something went wrong</div>;
+  return (
+    <div className="text-center my-10">
+      <h2 className="text-3xl font-bold my-9">Opp&apos;s</h2>
+      <h3 className="text-2xl ">Something went wrong!</h3>
+    </div>
+  );
 };
 
 export default ErrorPage;
