@@ -4,9 +4,9 @@ import logoDark from './logo-black.png';
 // import bannerImgOne from './banner/bannerImgOne.webp';
 // import bannerImgTwo from './banner/bannerImgTwo.webp';
 // import bannerImgThree from './banner/bannerImgThree.webp';
-// import saleImgOne from './sale/saleImgOne.webp';
-// import saleImgTwo from './sale/saleImgTwo.webp';
-// import saleImgThree from './sale/saleImgThree.webp';
+import saleImgOne from './images/sale/saleImgOne.webp';
+import saleImgTwo from './images/sale/saleImgTwo.webp';
+import saleImgThree from './images/sale/saleImgThree.webp';
 // // ============== Products Start here ====================
 // // New Arrivals
 // import newArrOne from './products/newArrival/newArrOne.webp';
@@ -39,9 +39,9 @@ export {
   //   bannerImgOne,
   //   bannerImgTwo,
   //   bannerImgThree,
-  //   saleImgOne,
-  //   saleImgTwo,
-  //   saleImgThree,
+  saleImgOne,
+  saleImgTwo,
+  saleImgThree,
   //   // ===================== Products start here ============
   //   // New Arrivals
   //   newArrOne,
