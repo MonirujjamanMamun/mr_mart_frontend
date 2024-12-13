@@ -1,7 +1,11 @@
+import HeroBottom from '../../components/home/hero/HeroBottom';
+import ProductOfTheYear from '../../components/home/ProductOfTheYear/ProductOfTheYear';
+
 const Home = () => {
   return (
-    <div>
-      <h1>This is Home Component</h1>
+    <div className="">
+      <HeroBottom />
+      <ProductOfTheYear />
     </div>
   );
 };

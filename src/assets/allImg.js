@@ -27,7 +27,7 @@ import logoDark from './logo-black.png';
 // import spfFour from './products/specialOffer/spfFour.webp';
 
 // // Year Product
-// import productOfTheYear from './products/productOfTheYear.webp';
+import productOfTheYear from './images/productOfTheYear.webp';
 // // ============== Products End here ======================
 import paymentCard from './payment.png';
 // import emptyCart from '../images/emptyCart.png';
@@ -62,7 +62,7 @@ export {
   //   spfFour,
 
   //   // Year Product
-  //   productOfTheYear,
+  productOfTheYear,
   //   // ===================== Products End here ==============
   paymentCard,
   //   emptyCart,

@@ -1,11 +1,15 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
-const ShopNow = () => {
+const Buttons = ({ title }) => {
   return (
     <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
-      Shop Now
+      {title}
     </button>
   );
 };
 
-export default ShopNow;
+export default Buttons;
+
+Buttons.propTypes = {
+  title: PropTypes.string,
+};

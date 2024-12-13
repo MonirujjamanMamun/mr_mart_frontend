@@ -3,7 +3,7 @@ import Image from '../designLayouts/Image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import FooterTitle from './FooterTitle';
-import { logoDark, paymentCard } from '../../assets/allImg';
+import { logoDark } from '../../assets/allImg';
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState('');
@@ -28,7 +28,7 @@ const Footer = () => {
     }
   };
   return (
-    <div className="w-full bg-[#F5F5F3] py-20">
+    <div className="w-full bg-gray-100 py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
           <Image
@@ -156,13 +156,6 @@ const Footer = () => {
                 </button>
               </div>
             )}
-
-            <Image
-              className={`w-[80%] lg:w-[60%] mx-auto ${
-                subscription ? 'mt-2' : 'mt-6'
-              }`}
-              imgSrc={paymentCard}
-            />
           </div>
         </div>
       </div>
