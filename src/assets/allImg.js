@@ -9,10 +9,11 @@ import saleImgTwo from './images/sale/saleImgTwo.webp';
 import saleImgThree from './images/sale/saleImgThree.webp';
 // // ============== Products Start here ====================
 // // New Arrivals
-// import newArrOne from './products/newArrival/newArrOne.webp';
-// import newArrTwo from './products/newArrival/newArrTwo.webp';
-// import newArrThree from './products/newArrival/newArrThree.webp';
-// import newArrFour from './products/newArrival/newArrFour.webp';
+import newArrHeadphone from './images/newarrivals/headphone.webp';
+import newArrLaptops from './images/newarrivals/laptops.webp';
+import newArrSmartWatch from './images/newarrivals/smartWatch.webp';
+import newArrTablets from './images/newarrivals/tablets.webp';
+import newArrCamera from './images/newarrivals/camera.webp';
 
 // // Best Sellers
 // import bestSellerOne from './products/bestSeller/bestSellerOne.webp';
@@ -42,12 +43,13 @@ export {
   saleImgOne,
   saleImgTwo,
   saleImgThree,
-  //   // ===================== Products start here ============
-  //   // New Arrivals
-  //   newArrOne,
-  //   newArrTwo,
-  //   newArrThree,
-  //   newArrFour,
+  // ===================== Products start here ============
+  // New Arrivals
+  newArrHeadphone,
+  newArrLaptops,
+  newArrSmartWatch,
+  newArrTablets,
+  newArrCamera,
 
   //   // Best Sellers
   //   bestSellerOne,
