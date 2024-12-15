@@ -15,17 +15,18 @@ import newArrSmartWatch from './images/newarrivals/smartWatch.webp';
 import newArrTablets from './images/newarrivals/tablets.webp';
 import newArrCamera from './images/newarrivals/camera.webp';
 
-// // Best Sellers
-// import bestSellerOne from './products/bestSeller/bestSellerOne.webp';
-// import bestSellerTwo from './products/bestSeller/bestSellerTwo.webp';
-// import bestSellerThree from './products/bestSeller/bestSellerThree.webp';
-// import bestSellerFour from './products/bestSeller/bestSellerFour.webp';
+// Best Sellers
+import bestSaleTablet from './images/bestsaleproduct/apptablet.webp';
+import bestSalePrinter from './images/bestsaleproduct/printer.webp';
+import bestSaleBlueIphone from './images/productOnSale/bluePhone.webp';
+import bestSaleSpeaker from './images/productOnSale/spekar.webp';
+import bestSaleSmartWatch from './images/newarrivals/smartWatch.webp';
 
-// // Special Offers
-// import spfOne from './products/specialOffer/spfOne.webp';
-// import spfTwo from './products/specialOffer/spfTwo.webp';
-// import spfThree from './products/specialOffer/spfThree.webp';
-// import spfFour from './products/specialOffer/spfFour.webp';
+// Special Offers
+import spfRedIphone from './images/productOnSale/redPhone.webp';
+import spfBlueIphone from './images/productOnSale/bluePhone.webp';
+import spfSpeaker from './images/productOnSale/spekar.webp';
+import spfTablets from './images/newarrivals/tablets.webp';
 
 // // Year Product
 import productOfTheYear from './images/productOfTheYear.webp';
@@ -51,17 +52,18 @@ export {
   newArrTablets,
   newArrCamera,
 
-  //   // Best Sellers
-  //   bestSellerOne,
-  //   bestSellerTwo,
-  //   bestSellerThree,
-  //   bestSellerFour,
+  // Best Sellers
+  bestSaleBlueIphone,
+  bestSalePrinter,
+  bestSaleSpeaker,
+  bestSaleTablet,
+  bestSaleSmartWatch,
 
-  //   // Sprcial Offers
-  //   spfOne,
-  //   spfTwo,
-  //   spfThree,
-  //   spfFour,
+  // Special Offers
+  spfRedIphone,
+  spfTablets,
+  spfBlueIphone,
+  spfSpeaker,
 
   //   // Year Product
   productOfTheYear,

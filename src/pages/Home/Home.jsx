@@ -1,3 +1,4 @@
+import BestSaleProduct from '../../components/home/BestSaleProduct/BestSaleProduct';
 import HeroBottom from '../../components/home/hero/HeroBottom';
 import NewArrivals from '../../components/home/NewArrivals/NewArrivals';
 import ProductOfTheYear from '../../components/home/ProductOfTheYear/ProductOfTheYear';
@@ -11,6 +12,7 @@ const Home = () => {
         <SaleFeature />
         <NewArrivals />
         <ProductOfTheYear />
+        <BestSaleProduct />
       </div>
     </div>
   );

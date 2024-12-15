@@ -9,7 +9,7 @@ import { GiReturnArrow } from 'react-icons/gi';
 import PropTypes from 'prop-types';
 import { addToCart } from '../../../redux/feature/cart/cartSlice';
 
-const Product = ({ _id, productName, badge, img, price, color }) => {
+const Product = ({ _id, productName, des, badge, img, price, color }) => {
   const dispatch = useDispatch();
   const idString = (_id) => {
     return String(_id).toLowerCase().split(' ').join('');
@@ -20,7 +20,7 @@ const Product = ({ _id, productName, badge, img, price, color }) => {
   const handleProductDetails = () => {
     navigate(`/product/${rootId}`, {
       state: {
-        item: { _id, productName, badge, img, price, color },
+        item: { _id, productName, des, badge, img, price, color },
       },
     });
   };
@@ -94,7 +94,13 @@ const Product = ({ _id, productName, badge, img, price, color }) => {
 };
 
 Product.propTypes = {
-  props: PropTypes.any,
+  _id: PropTypes.string.isRequired,
+  productName: PropTypes.string.isRequired,
+  des: PropTypes.string.isRequired,
+  badge: PropTypes.bool,
+  img: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default Product;

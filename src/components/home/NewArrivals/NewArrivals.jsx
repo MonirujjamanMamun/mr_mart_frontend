@@ -1,7 +1,5 @@
 import Slider from 'react-slick';
 import Heading from '../Products/Heading';
-import NextArrow from './NextArrow';
-import PreviousArrow from './PreviousArrow';
 import Product from '../Products/Product';
 import {
   newArrHeadphone,
@@ -10,44 +8,9 @@ import {
   newArrTablets,
   newArrCamera,
 } from '../../../assets/allImg';
+import settings from '../../../utils/sliderSetting/sliderSetting';
 
 const NewArrivals = () => {
-  const settings = {
-    dots: true,
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PreviousArrow />,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-    ],
-  };
   const products = [
     {
       _id: '10001',
@@ -55,7 +18,7 @@ const NewArrivals = () => {
       productName: 'Camera',
       price: '150.00',
       color: 'Gray',
-      badge: true,
+      badge: false,
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
@@ -105,16 +68,6 @@ const NewArrivals = () => {
             <Product {...product} />
           </div>
         ))}
-        {/* <Product
-            _id="100001"
-            img={newArrCamera}
-            productName="Round Table Clock"
-            price="44.00"
-            color="Black"
-            badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          /> */}
-        {/* </div> */}
       </Slider>
     </div>
   );
