@@ -8,8 +8,9 @@ import Badge from './Badge';
 import { GiReturnArrow } from 'react-icons/gi';
 import PropTypes from 'prop-types';
 import { addToCart } from '../../../redux/feature/cart/cartSlice';
+import OffBadge from './OffBadge';
 
-const Product = ({ _id, productName, des, badge, img, price, color }) => {
+const Product = ({ _id, productName, des, badge, off, img, price, color }) => {
   const dispatch = useDispatch();
   const idString = (_id) => {
     return String(_id).toLowerCase().split(' ').join('');
@@ -32,6 +33,7 @@ const Product = ({ _id, productName, des, badge, img, price, color }) => {
         </div>
         <div className="absolute top-6 left-8">
           {badge && <Badge text="New" />}
+          {off && <OffBadge text="20%" />}
         </div>
         <div className="w-full h-32 absolute bg-white -bottom-[130px] group-hover:bottom-0 duration-700">
           <ul className="w-full h-full flex flex-col items-end justify-center gap-2 font-titleFont px-2 border-l border-r">
@@ -98,6 +100,7 @@ Product.propTypes = {
   productName: PropTypes.string.isRequired,
   des: PropTypes.string.isRequired,
   badge: PropTypes.bool,
+  off: PropTypes.bool,
   img: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,

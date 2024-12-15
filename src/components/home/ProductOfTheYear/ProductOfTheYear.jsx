@@ -6,10 +6,10 @@ import { productOfTheYear } from '../../../assets/allImg';
 const ProductOfTheYear = () => {
   let currentYear = new Date().getFullYear();
   return (
-    <div className="w-full h-80 mb-20 bg-[#f3f3f3] md:bg-transparent relative font-titleFont">
+    <div className="w-full h-80 mb-20 bg-gray-100 relative font-titleFont">
       <div className="w-full md:w-2/3 xl:w-1/2 p-3">
         <Image
-          className="w-3/5 object-cover hidden md:inline-block md:mr-5 lg:mr-5"
+          className="w-3/5 object-cover hidden md:inline-block"
           imgSrc={productOfTheYear}
         />
       </div>

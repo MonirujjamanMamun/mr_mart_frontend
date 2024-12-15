@@ -7,8 +7,12 @@ import logoDark from './logo-black.png';
 import saleImgOne from './images/sale/saleImgOne.webp';
 import saleImgTwo from './images/sale/saleImgTwo.webp';
 import saleImgThree from './images/sale/saleImgThree.webp';
-// // ============== Products Start here ====================
-// // New Arrivals
+
+// *************************
+//***Products Start here****
+// *************************
+
+// New Arrivals
 import newArrHeadphone from './images/newarrivals/headphone.webp';
 import newArrLaptops from './images/newarrivals/laptops.webp';
 import newArrSmartWatch from './images/newarrivals/smartWatch.webp';
@@ -22,15 +26,24 @@ import bestSaleBlueIphone from './images/productOnSale/bluePhone.webp';
 import bestSaleSpeaker from './images/productOnSale/spekar.webp';
 import bestSaleSmartWatch from './images/newarrivals/smartWatch.webp';
 
-// Special Offers
+// Product On Sale
 import spfRedIphone from './images/productOnSale/redPhone.webp';
 import spfBlueIphone from './images/productOnSale/bluePhone.webp';
 import spfSpeaker from './images/productOnSale/spekar.webp';
 import spfTablets from './images/newarrivals/tablets.webp';
 
-// // Year Product
+// Special Offer
+import speOffTablet from './images/specialOffer/apptablet.webp';
+import speOffBlueIphone from './images/specialOffer/bluePhone.webp';
+import speOffLaptops from './images/specialOffer/laptops.webp';
+
+// Year Product
 import productOfTheYear from './images/productOfTheYear.webp';
-// // ============== Products End here ======================
+
+// *************************
+// *** Products End here ***
+// *************************
+
 import paymentCard from './payment.png';
 // import emptyCart from '../images/emptyCart.png';
 
@@ -59,15 +72,25 @@ export {
   bestSaleTablet,
   bestSaleSmartWatch,
 
-  // Special Offers
+  // Product On Sale
   spfRedIphone,
   spfTablets,
   spfBlueIphone,
   spfSpeaker,
 
-  //   // Year Product
+  // Special Offer
+  speOffTablet,
+  speOffBlueIphone,
+  speOffLaptops,
+  // bestSalePrinter,
+  // spfSpeaker,
+
+  // Year Product
   productOfTheYear,
-  //   // ===================== Products End here ==============
+
+  //*************************
+  //*** Products End here ***
+  //*************************
   paymentCard,
   //   emptyCart,
 };
