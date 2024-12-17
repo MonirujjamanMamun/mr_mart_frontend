@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Breadcrumbs from '../../components/designLayouts/Breadcrumbs';
 import ShopSideNav from './ShopSideNav';
+import Pagination from '../../components/ShopPage/MainBar/Pagination/Pagination';
+import ShoppingPageBanner from '../../components/ShopPage/MainBar/ShoppingPageBanner';
 
 const Shop = () => {
   const [itemsPerPage, setItemsPerPage] = useState(12);
@@ -17,8 +19,8 @@ const Shop = () => {
           <ShopSideNav />
         </div>
         <div className="w-full mdl:w-[80%] lgl:w-[75%] h-full flex flex-col gap-10">
-          {/* <ProductBanner itemsPerPageFromBanner={itemsPerPageFromBanner} />
-          <Pagination itemsPerPage={itemsPerPage} /> */}
+          <ShoppingPageBanner itemsPerPageFromBanner={itemsPerPageFromBanner} />
+          <Pagination itemsPerPage={itemsPerPage} />
         </div>
       </div>
       {/* ================= Products End here ===================== */}
