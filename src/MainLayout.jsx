@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import FooterBottom from './components/Footer/FooterBottom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
   return (
@@ -15,6 +16,7 @@ const MainLayout = () => {
       <Outlet />
       <Footer />
       <FooterBottom />
+      <Toaster />
     </div>
   );
 };

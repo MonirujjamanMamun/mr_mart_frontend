@@ -44,6 +44,23 @@ import productOfTheYear from './images/productOfTheYear.webp';
 // *** Products End here ***
 // *************************
 
+//*****************************
+//*** Pagination start here ***
+//*****************************
+import monitor from './images/pagination/acer-monitor.jpg';
+import appipad from './images/pagination/appipad.webp';
+import applap from './images/pagination/applap.webp';
+import asuaslap from './images/pagination/asuaslap.webp';
+import game from './images/pagination/game.webp';
+import iapdlap from './images/pagination/iapdlap.webp';
+import ipadgreen from './images/pagination/ipadgreen.webp';
+import prodcut from './images/pagination/prodcut.webp';
+import samsungIpad from './images/pagination/samsung-ipad.jpg';
+
+//***************************
+//*** Pagination end here ***
+//***************************
+
 import paymentCard from './payment.png';
 import emptyCart from './emptyCart.png';
 
@@ -57,7 +74,10 @@ export {
   saleImgOne,
   saleImgTwo,
   saleImgThree,
-  // ===================== Products start here ============
+  // ***************************
+  // *** Products start here ***
+  // ***************************
+
   // New Arrivals
   newArrHeadphone,
   newArrLaptops,
@@ -93,4 +113,20 @@ export {
   //*************************
   paymentCard,
   emptyCart,
+
+  //*****************************
+  //*** Pagination start here ***
+  //*****************************
+  samsungIpad,
+  prodcut,
+  ipadgreen,
+  iapdlap,
+  game,
+  asuaslap,
+  applap,
+  appipad,
+  monitor,
+  //***************************
+  //*** Pagination end here ***
+  //***************************
 };

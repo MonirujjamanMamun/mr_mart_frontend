@@ -1,7 +1,37 @@
+import {
+  newArrCamera,
+  newArrHeadphone,
+  newArrLaptops,
+  newArrSmartWatch,
+  newArrTablets,
+  bestSaleBlueIphone,
+  bestSalePrinter,
+  bestSaleSmartWatch,
+  bestSaleSpeaker,
+  bestSaleTablet,
+  productOfTheYear,
+  speOffBlueIphone,
+  speOffLaptops,
+  speOffTablet,
+  spfBlueIphone,
+  spfRedIphone,
+  spfSpeaker,
+  spfTablets,
+  prodcut,
+  samsungIpad,
+  monitor,
+  appipad,
+  applap,
+  asuaslap,
+  game,
+  iapdlap,
+  ipadgreen,
+} from '../../assets/allImg';
+
 const paginationItems = [
   {
     _id: 1001,
-    // img :spfOne,
+    img: newArrCamera,
     productName: 'Cap for Boys',
     price: '35.00',
     color: 'Blank and White',
@@ -10,7 +40,7 @@ const paginationItems = [
   },
   {
     _id: 1002,
-    // img :spfTwo,
+    img: newArrHeadphone,
     productName: 'Tea Table',
     price: '180.00',
     color: 'Gray',
@@ -19,7 +49,7 @@ const paginationItems = [
   },
   {
     _id: 1003,
-    // img :spfThree,
+    img: newArrLaptops,
     productName: 'Headphones',
     price: '25.00',
     color: 'Mixed',
@@ -28,7 +58,7 @@ const paginationItems = [
   },
   {
     _id: 1004,
-    // img :spfFour,
+    img: monitor,
     productName: 'Sun glasses',
     price: '220.00',
     color: 'Black',
@@ -37,7 +67,7 @@ const paginationItems = [
   },
   {
     _id: 1005,
-    // img :bestSellerOne,
+    img: ipadgreen,
     productName: 'Flower Base',
     price: '35.00',
     color: 'Blank and White',
@@ -46,7 +76,7 @@ const paginationItems = [
   },
   {
     _id: 1006,
-    // img :bestSellerTwo,
+    img: productOfTheYear,
     productName: 'New Backpack',
     price: '180.00',
     color: 'Gray',
@@ -55,7 +85,7 @@ const paginationItems = [
   },
   {
     _id: 1007,
-    // img :bestSellerThree,
+    img: monitor,
     productName: 'Household materials',
     price: '25.00',
     color: 'Mixed',
@@ -64,7 +94,7 @@ const paginationItems = [
   },
   {
     _id: 1008,
-    // img :bestSellerFour,
+    img: bestSaleTablet,
     productName: 'Travel Bag',
     price: '220.00',
     color: 'Black',
@@ -73,7 +103,7 @@ const paginationItems = [
   },
   {
     _id: 1009,
-    // img :newArrOne,
+    img: bestSaleSpeaker,
     productName: 'Round Table Clock',
     price: '44.00',
     color: 'Black',
@@ -82,7 +112,7 @@ const paginationItems = [
   },
   {
     _id: 1010,
-    // img :newArrTwo,
+    img: bestSaleSmartWatch,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -91,7 +121,7 @@ const paginationItems = [
   },
   {
     _id: 1011,
-    // img :newArrThree,
+    img: bestSalePrinter,
     productName: 'cloth Basket',
     price: '80.00',
     color: 'Mixed',
@@ -100,7 +130,7 @@ const paginationItems = [
   },
   {
     _id: 1012,
-    // img :newArrFour,
+    img: bestSaleBlueIphone,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -109,7 +139,7 @@ const paginationItems = [
   },
   {
     _id: 1013,
-    // img :newArrTwo,
+    img: newArrTablets,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -119,7 +149,7 @@ const paginationItems = [
 
   {
     _id: 1014,
-    // img :newArrTwo,
+    img: newArrSmartWatch,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -128,7 +158,7 @@ const paginationItems = [
   },
   {
     _id: 1015,
-    // img :newArrFour,
+    img: spfTablets,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -137,7 +167,7 @@ const paginationItems = [
   },
   {
     _id: 1016,
-    // img :newArrTwo,
+    img: spfSpeaker,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -146,7 +176,7 @@ const paginationItems = [
   },
   {
     _id: 1017,
-    // img :bestSellerFour,
+    img: spfRedIphone,
     productName: 'Travel Bag',
     price: '220.00',
     color: 'Black',
@@ -155,7 +185,7 @@ const paginationItems = [
   },
   {
     _id: 1018,
-    // img :newArrOne,
+    img: spfBlueIphone,
     productName: 'Round Table Clock',
     price: '44.00',
     color: 'Black',
@@ -164,7 +194,7 @@ const paginationItems = [
   },
   {
     _id: 1019,
-    // img :newArrTwo,
+    img: speOffTablet,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -173,7 +203,7 @@ const paginationItems = [
   },
   {
     _id: 1020,
-    // img :newArrThree,
+    img: speOffLaptops,
     productName: 'cloth Basket',
     price: '80.00',
     color: 'Mixed',
@@ -182,7 +212,7 @@ const paginationItems = [
   },
   {
     _id: 1021,
-    // img :spfThree,
+    img: speOffBlueIphone,
     productName: 'Headphones',
     price: '25.00',
     color: 'Mixed',
@@ -191,7 +221,7 @@ const paginationItems = [
   },
   {
     _id: 1022,
-    // img :spfFour,
+    img: monitor,
     productName: 'Sun glasses',
     price: '220.00',
     color: 'Black',
@@ -200,7 +230,7 @@ const paginationItems = [
   },
   {
     _id: 1023,
-    // img :bestSellerOne,
+    img: samsungIpad,
     productName: 'Flower Base',
     price: '35.00',
     color: 'Blank and White',
@@ -209,7 +239,7 @@ const paginationItems = [
   },
   {
     _id: 1024,
-    // img :spfOne,
+    img: prodcut,
     productName: 'Cap for Boys',
     price: '35.00',
     color: 'Blank and White',
@@ -218,7 +248,7 @@ const paginationItems = [
   },
   {
     _id: 1025,
-    // img :spfTwo,
+    img: ipadgreen,
     productName: 'Tea Table',
     price: '180.00',
     color: 'Gray',
@@ -227,7 +257,7 @@ const paginationItems = [
   },
   {
     _id: 1026,
-    // img :spfThree,
+    img: iapdlap,
     productName: 'Headphones',
     price: '25.00',
     color: 'Mixed',
@@ -236,7 +266,7 @@ const paginationItems = [
   },
   {
     _id: 1027,
-    // img :spfFour,
+    img: game,
     productName: 'Sun glasses',
     price: '220.00',
     color: 'Black',
@@ -245,7 +275,7 @@ const paginationItems = [
   },
   {
     _id: 1028,
-    // img :bestSellerOne,
+    img: asuaslap,
     productName: 'Flower Base',
     price: '35.00',
     color: 'Blank and White',
@@ -254,7 +284,7 @@ const paginationItems = [
   },
   {
     _id: 1029,
-    // img :bestSellerTwo,
+    img: applap,
     productName: 'New Backpack',
     price: '180.00',
     color: 'Gray',
@@ -263,7 +293,7 @@ const paginationItems = [
   },
   {
     _id: 1030,
-    // img :bestSellerThree,
+    img: appipad,
     productName: 'Household materials',
     price: '25.00',
     color: 'Mixed',
@@ -272,7 +302,7 @@ const paginationItems = [
   },
   {
     _id: 1031,
-    // img :bestSellerFour,
+    img: monitor,
     productName: 'Travel Bag',
     price: '220.00',
     color: 'Black',
@@ -281,7 +311,7 @@ const paginationItems = [
   },
   {
     _id: 1032,
-    // img :newArrOne,
+    img: ipadgreen,
     productName: 'Round Table Clock',
     price: '44.00',
     color: 'Black',
@@ -290,7 +320,7 @@ const paginationItems = [
   },
   {
     _id: 1033,
-    // img :newArrTwo,
+    img: iapdlap,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -299,7 +329,7 @@ const paginationItems = [
   },
   {
     _id: 1034,
-    // img :newArrThree,
+    img: appipad,
     productName: 'cloth Basket',
     price: '80.00',
     color: 'Mixed',
@@ -308,7 +338,7 @@ const paginationItems = [
   },
   {
     _id: 1035,
-    // img :newArrFour,
+    img: samsungIpad,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -317,7 +347,7 @@ const paginationItems = [
   },
   {
     _id: 1036,
-    // img :newArrTwo,
+    img: prodcut,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -326,7 +356,7 @@ const paginationItems = [
   },
   {
     _id: 1037,
-    // img :newArrFour,
+    img: spfSpeaker,
     productName: 'Funny toys for babies',
     price: '60.00',
     color: 'Mixed',
@@ -335,7 +365,7 @@ const paginationItems = [
   },
   {
     _id: 1038,
-    // img :newArrTwo,
+    img: spfBlueIphone,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -344,7 +374,7 @@ const paginationItems = [
   },
   {
     _id: 1039,
-    // img :bestSellerFour,
+    img: speOffLaptops,
     productName: 'Travel Bag',
     price: '220.00',
     color: 'Black',
@@ -353,7 +383,7 @@ const paginationItems = [
   },
   {
     _id: 1040,
-    // img :newArrOne,
+    img: productOfTheYear,
     productName: 'Round Table Clock',
     price: '44.00',
     color: 'Black',
@@ -362,7 +392,7 @@ const paginationItems = [
   },
   {
     _id: 1041,
-    // img :newArrTwo,
+    img: bestSaleSpeaker,
     productName: 'Smart Watch',
     price: '250.00',
     color: 'Black',
@@ -371,7 +401,7 @@ const paginationItems = [
   },
   {
     _id: 1042,
-    // img :newArrThree,
+    img: bestSalePrinter,
     productName: 'cloth Basket',
     price: '80.00',
     color: 'Mixed',
@@ -380,7 +410,7 @@ const paginationItems = [
   },
   {
     _id: 1043,
-    // img :spfThree,
+    img: newArrTablets,
     productName: 'Headphones',
     price: '25.00',
     color: 'Mixed',
@@ -389,7 +419,7 @@ const paginationItems = [
   },
   {
     _id: 1044,
-    // img :spfFour,
+    img: newArrLaptops,
     productName: 'Sun glasses',
     price: '220.00',
     color: 'Black',
@@ -398,7 +428,7 @@ const paginationItems = [
   },
   {
     _id: 1045,
-    // img :bestSellerOne,
+    img: newArrCamera,
     productName: 'Flower Base',
     price: '35.00',
     color: 'Blank and White',
@@ -407,7 +437,7 @@ const paginationItems = [
   },
   {
     _id: 1046,
-    // img :spfOne,
+    img: productOfTheYear,
     productName: 'Cap for Boys',
     price: '35.00',
     color: 'Blank and White',
