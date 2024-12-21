@@ -23,11 +23,13 @@ export default {
       colors: {
         primeColor: '#262626',
         lightText: '#6D6D6D',
+        primary: '#2453DF',
+        secondary: '#0C1F58',
       },
       boxShadow: {
         testShadow: '0px 0px 54px -13px rgba(0,0,0,0.7)',
       },
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar'), require('@tailwindcss/forms')],
 };

@@ -1,11 +1,14 @@
+import { loading } from '../../assets/allImg';
+
 const Loading = () => {
+  const style = {
+    background: `radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%)`,
+  };
+
   return (
-    <div className="relative flex justify-center items-center">
-      <div className="absolute animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-orange-500"></div>
-      <img
-        src="https://dev-portal.motforex.com/_next/imageurl=https://cdn.motforex.com/motforex/logo/logo.webp&w=48&q=75"
-        className="rounded-full h-20 w-20"
-      />
+    <div className="relative flex justify-center items-center h-screen w-full">
+      <div style={style} className=" h-full w-full absolute top-0"></div>
+      <img src={loading} alt="" />
     </div>
   );
 };

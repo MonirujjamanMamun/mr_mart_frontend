@@ -4,6 +4,7 @@ import PreviousArrow from '../../components/home/NewArrivals/PreviousArrow';
 const settings = {
   arrows: true,
   infinite: true,
+  autoplay: true,
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 1,

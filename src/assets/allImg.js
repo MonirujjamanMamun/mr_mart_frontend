@@ -1,3 +1,5 @@
+import login from './login.svg';
+import loading from './loading.gif';
 import logo from './logo.png';
 import logoLight from './logo-white.png';
 import logoDark from './logo-black.png';
@@ -65,6 +67,8 @@ import paymentCard from './payment.png';
 import emptyCart from './emptyCart.png';
 
 export {
+  login,
+  loading,
   logo,
   logoLight,
   logoDark,
