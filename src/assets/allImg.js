@@ -3,6 +3,8 @@ import loading from './loading.gif';
 import logo from './logo.png';
 import logoLight from './logo-white.png';
 import logoDark from './logo-black.png';
+import ceoImg from './monirujjaman.jpg';
+import support_staff from './support-staff.jpg';
 // import bannerImgOne from './banner/bannerImgOne.webp';
 // import bannerImgTwo from './banner/bannerImgTwo.webp';
 // import bannerImgThree from './banner/bannerImgThree.webp';
@@ -72,6 +74,8 @@ export {
   logo,
   logoLight,
   logoDark,
+  ceoImg,
+  support_staff,
   //   bannerImgOne,
   //   bannerImgTwo,
   //   bannerImgThree,
