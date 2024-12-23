@@ -1,101 +1,132 @@
-// import { useState } from 'react';
-import Slider from 'react-slick';
-// import settings from '../../../utils/sliderSetting/sliderSetting';
+import { useEffect, useState } from 'react';
+import { blackHeadphone, bluePhone } from '../../../assets/allImg';
+import Buttons from '../../designLayouts/buttons/Buttons';
+import { Link, Links } from 'react-router-dom';
+
+const data = [
+  {
+    img: bluePhone,
+    title: 'Forest Serenity',
+    des: 'Discover the peace and beauty of the forest. A perfect place to escape the everyday hustle and reconnect with nature.',
+  },
+  {
+    img: blackHeadphone,
+    title: 'Golden Canopy',
+    des: 'Bask in the warmth and beauty of the golden leaves against a clear blue sky. A perfect spot for a peaceful retreat and reflection.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1719749990914-a3ba54e6343f?q=80&w=2072&auto=format&fit=crop',
+    title: 'Urban Exploration',
+    des: 'Venture into the hidden corners of the city and uncover the beauty of forgotten urban landscapes. A thrilling escape into the depths of urban architecture.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1467195468637-72eb862bb14e?q=80&w=2071&auto=format&fit=crop',
+    title: 'Industrial Mystery',
+    des: 'Explore the enigmatic charm of industrial structures. A perfect setting for those with a sense of adventure and an eye for urban beauty.',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1532155297578-a43684be8db8?q=80&w=2071&auto=format&fit=crop',
+    title: 'Blossom Bliss',
+    des: 'Revel in the vibrant colors and delicate petals of a blossoming field. An ideal retreat for those seeking a burst of natural beauty and serenity.',
+  },
+];
 
 const HeroBanner = () => {
-  //   const [dotActive, setDocActive] = useState(0);
-  const settings = {
-    arrows: true,
-    infinite: true,
-    // autoplay: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PreviousArrow />,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-    ],
-  };
+  const [currentSlider, setCurrentSlider] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () =>
+        setCurrentSlider(
+          currentSlider === data.length - 1 ? 0 : currentSlider + 1
+        ),
+      5000
+    );
+    return () => clearInterval(intervalId);
+  }, [currentSlider]);
 
   return (
-    <div className="w-full bg-white">
-      <Slider {...settings}>
-        <div className="flex flex-col md:flex-row lg:flex-row gap-5">
-          <div>
-            <h1>1</h1>
-            <h2>Hero left</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
-              ad.
-            </p>
-          </div>
-          <div>
-            <h2>Hero Right</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Assumenda, voluptatibus?
-            </p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h1>2</h1>
-            <h2>Hero left</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
-              ad.
-            </p>
-          </div>
-          <div>
-            <h2>Hero Right</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Assumenda, voluptatibus?
-            </p>
-          </div>
-        </div>
-        <div>
-          <h1>3</h1>
-          <div>
-            <h2>Hero left</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum,
-              ad.
-            </p>
-          </div>
-          <div>
-            <h2>Hero Right</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Assumenda, voluptatibus?
-            </p>
-          </div>
-        </div>
-      </Slider>
+    <div className="flex flex-row-reverse justify-between">
+      <div className="h-72 w-full transform overflow-hidden rounded-lg before:bg-black/50 sm:h-96 md:h-[540px] lg:gap-10">
+        {data.map((slide, index) => {
+          const { img, title, des } = slide;
+          return (
+            <div
+              className={`${
+                index === currentSlider
+                  ? 'visible opacity-100'
+                  : 'invisible opacity-0'
+              } absolute inset-0 duration-500 ease-linear`}
+              key={`index_${index}`}
+            >
+              <img
+                src={img}
+                width="1200"
+                height="600"
+                alt={title}
+                className={`h-full w-full object-cover duration-500 ease-linear ${
+                  index === currentSlider ? 'scale-100' : 'scale-105'
+                }`}
+              />
+              <div className="absolute inset-0 flex flex-col bg-black/40 p-5 text-center text-white drop-shadow-lg">
+                <div className="mb-0 mt-auto rounded-md bg-white/40 p-3 backdrop-blur-3xl">
+                  <div className="mb-3 overflow-hidden text-xl font-semibold lg:text-3xl">
+                    <h1
+                      className={`${
+                        index === currentSlider ? '' : 'translate-y-12'
+                      } duration-500 ease-linear`}
+                    >
+                      {title}
+                    </h1>
+                  </div>
+                  <div className="overflow-hidden text-sm md:text-base lg:text-lg">
+                    <p
+                      className={`${
+                        index === currentSlider ? '' : '-translate-y-12'
+                      } duration-500 ease-linear`}
+                    >
+                      {des}
+                    </p>
+                  </div>
+                  <div className="overflow-hidden text-sm md:text-base lg:text-lg mt-3">
+                    <p
+                      className={`${
+                        index === currentSlider ? '' : '-translate-y-12'
+                      } duration-500 ease-linear`}
+                    >
+                      <Link to={'/shop'}>
+                        {' '}
+                        <Buttons title={'Shop now'} />
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {/* slider container */}
+      <div className="flex flex-col items-center justify-center gap-3 p-2">
+        {data.map((slide, index) => {
+          const { img, title } = slide;
+          return (
+            <img
+              key={index}
+              src={img}
+              width={1200}
+              height={600}
+              className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${
+                currentSlider === index
+                  ? 'opacity-100 ring ring-sky-500'
+                  : 'opacity-60'
+              } box-content cursor-pointer rounded-md md:rounded-lg`}
+              alt={title}
+              onClick={() => setCurrentSlider(index)}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

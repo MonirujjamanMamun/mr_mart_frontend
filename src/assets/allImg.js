@@ -5,9 +5,17 @@ import logoLight from './logo-white.png';
 import logoDark from './logo-black.png';
 import ceoImg from './monirujjaman.jpg';
 import support_staff from './support-staff.jpg';
-// import bannerImgOne from './banner/bannerImgOne.webp';
-// import bannerImgTwo from './banner/bannerImgTwo.webp';
-// import bannerImgThree from './banner/bannerImgThree.webp';
+
+// *************************
+//***Carousel Start here****
+// *************************
+
+import blackHeadphone from './images/carusel/black-headphone.jpg';
+import bluePhone from './images/carusel/blue-phone.jpg';
+
+// *************************
+//***Carousel End here****
+// *************************
 import saleImgOne from './images/sale/saleImgOne.webp';
 import saleImgTwo from './images/sale/saleImgTwo.webp';
 import saleImgThree from './images/sale/saleImgThree.webp';
@@ -76,9 +84,14 @@ export {
   logoDark,
   ceoImg,
   support_staff,
-  //   bannerImgOne,
-  //   bannerImgTwo,
-  //   bannerImgThree,
+  // *************************
+  //***Carousel Start here****
+  // *************************
+  blackHeadphone,
+  bluePhone,
+  // *************************
+  //***Carousel End here****
+  // *************************
   saleImgOne,
   saleImgTwo,
   saleImgThree,
