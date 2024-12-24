@@ -1,33 +1,39 @@
 import { useEffect, useState } from 'react';
-import { blackHeadphone, bluePhone } from '../../../assets/allImg';
+import {
+  blackHeadphone,
+  bluePhone,
+  laptop,
+  mobile,
+  washingmechin,
+} from '../../../assets/allImg';
 import Buttons from '../../designLayouts/buttons/Buttons';
-import { Link, Links } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const data = [
   {
     img: bluePhone,
-    title: 'Forest Serenity',
-    des: 'Discover the peace and beauty of the forest. A perfect place to escape the everyday hustle and reconnect with nature.',
+    title: 'Weekend sale, Save 50% OFF on shop & Gadget.',
+    des: 'Exclusive limited-time offer: Save up to 50%! Don’t miss this deal—shop now and grab incredible discounts before it’s gone!',
   },
   {
     img: blackHeadphone,
-    title: 'Golden Canopy',
-    des: 'Bask in the warmth and beauty of the golden leaves against a clear blue sky. A perfect spot for a peaceful retreat and reflection.',
+    title: 'Headphone and smart Gadgets & Save more money.',
+    des: 'Exclusive limited-time offer: Save up to 50%! Don’t miss this deal—shop now and grab incredible discounts before it’s gone!',
   },
   {
-    img: 'https://images.unsplash.com/photo-1719749990914-a3ba54e6343f?q=80&w=2072&auto=format&fit=crop',
-    title: 'Urban Exploration',
-    des: 'Venture into the hidden corners of the city and uncover the beauty of forgotten urban landscapes. A thrilling escape into the depths of urban architecture.',
+    img: laptop,
+    title: 'Up to 50% OFF Limited Time Deal Grab Today.',
+    des: 'Exclusive limited-time offer. Save up to 50%! Don’t miss this deal—shop now and grab incredible discounts before it’s gone!',
   },
   {
-    img: 'https://images.unsplash.com/photo-1467195468637-72eb862bb14e?q=80&w=2071&auto=format&fit=crop',
-    title: 'Industrial Mystery',
-    des: 'Explore the enigmatic charm of industrial structures. A perfect setting for those with a sense of adventure and an eye for urban beauty.',
+    img: mobile,
+    title: 'Up to 50% OFF Limited Time Deal Grab Today.',
+    des: 'Exclusive limited-time offer: Save up to 50%! Don’t miss this deal—shop now and grab incredible discounts before it’s gone!',
   },
   {
-    img: 'https://images.unsplash.com/photo-1532155297578-a43684be8db8?q=80&w=2071&auto=format&fit=crop',
-    title: 'Blossom Bliss',
-    des: 'Revel in the vibrant colors and delicate petals of a blossoming field. An ideal retreat for those seeking a burst of natural beauty and serenity.',
+    img: washingmechin,
+    title: 'Up to 50% OFF Limited Time Deal Grab Today.',
+    des: 'Exclusive limited-time offer: Save up to 50%! Don’t miss this deal—shop now and grab incredible discounts before it’s gone!',
   },
 ];
 
@@ -94,8 +100,7 @@ const HeroBanner = () => {
                         index === currentSlider ? '' : '-translate-y-12'
                       } duration-500 ease-linear`}
                     >
-                      <Link to={'/shop'}>
-                        {' '}
+                      <Link to="/shop">
                         <Buttons title={'Shop now'} />
                       </Link>
                     </p>
@@ -107,7 +112,7 @@ const HeroBanner = () => {
         })}
       </div>
       {/* slider container */}
-      <div className="flex flex-col items-center justify-center gap-3 p-2">
+      {/* <div className="flex flex-col items-center justify-center gap-3 p-2">
         {data.map((slide, index) => {
           const { img, title } = slide;
           return (
@@ -126,7 +131,7 @@ const HeroBanner = () => {
             />
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

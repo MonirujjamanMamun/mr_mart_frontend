@@ -12,6 +12,9 @@ import support_staff from './support-staff.jpg';
 
 import blackHeadphone from './images/carusel/black-headphone.jpg';
 import bluePhone from './images/carusel/blue-phone.jpg';
+import laptop from './images/carusel/laptops.jpg';
+import mobile from './images/carusel/show-mobail.jpg';
+import washingmechin from './images/carusel/show-washingmechin.jpg';
 
 // *************************
 //***Carousel End here****
@@ -89,6 +92,9 @@ export {
   // *************************
   blackHeadphone,
   bluePhone,
+  laptop,
+  washingmechin,
+  mobile,
   // *************************
   //***Carousel End here****
   // *************************
