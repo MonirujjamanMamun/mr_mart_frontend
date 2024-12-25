@@ -1,4 +1,4 @@
-const navItem = [
+const allNavItem = [
   {
     _id: 1001,
     title: 'Home',
@@ -21,4 +21,4 @@ const navItem = [
   },
 ];
 
-export default navItem;
+export default allNavItem;
