@@ -13,7 +13,7 @@ import {
 const SpecialOffer = () => {
   const specialOfferProducts = [
     {
-      _id: '1201',
+      _id: 1201,
       img: speOffBlueIphone,
       productName: 'Iphone',
       price: '250.00',
@@ -23,7 +23,7 @@ const SpecialOffer = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1202',
+      _id: 1202,
       img: bestSalePrinter,
       productName: 'Printer',
       price: '200.00',
@@ -33,7 +33,7 @@ const SpecialOffer = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1203',
+      _id: 1203,
       img: spfSpeaker,
       productName: 'Head Phone',
       price: '50.00',
@@ -43,7 +43,7 @@ const SpecialOffer = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1204',
+      _id: 1204,
       img: speOffLaptops,
       productName: 'Tablet',
       price: '250.00',
@@ -53,7 +53,7 @@ const SpecialOffer = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1205',
+      _id: 1205,
       img: speOffTablet,
       productName: 'Smart Watch',
       price: '150.00',

@@ -52,13 +52,13 @@ const ProductInfo = ({ _id, productName, des, img, badge, price, color }) => {
 };
 
 ProductInfo.propTypes = {
-  _id: PropTypes.string.isRequired,
-  des: PropTypes.string.isRequired,
-  productName: PropTypes.string.isRequired,
+  _id: PropTypes.number,
+  des: PropTypes.string,
+  productName: PropTypes.string,
   badge: PropTypes.bool,
-  img: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  price: PropTypes.string,
+  color: PropTypes.string,
 };
 
 export default ProductInfo;

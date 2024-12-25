@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { MdClose } from 'react-icons/md';
 import { HiMenuAlt2 } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import navItem from '../../utils/constants/NavItem';
+import navItem from '../../utils/constants/navItem';
 import { logoDark } from '../../assets/allImg';
 import Image from '../designLayouts/Image';
 import Flex from '../designLayouts/Flex';
@@ -102,11 +102,11 @@ const Header = () => {
                           transition={{ duration: 0.4 }}
                           className="text-sm flex flex-col gap-1"
                         >
-                          <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
-                          <li className="headerSedenavLi">Others</li>
+                          <li className="">New Arrivals</li>
+                          <li className="">Gudgets</li>
+                          <li className="">Accessories</li>
+                          <li className="">Electronics</li>
+                          <li className="">Others</li>
                         </motion.ul>
                       )}
                     </div>
@@ -125,11 +125,11 @@ const Header = () => {
                           transition={{ duration: 0.4 }}
                           className="text-sm flex flex-col gap-1"
                         >
-                          <li className="headerSedenavLi">New Arrivals</li>
-                          <li className="headerSedenavLi">Gudgets</li>
-                          <li className="headerSedenavLi">Accessories</li>
-                          <li className="headerSedenavLi">Electronics</li>
-                          <li className="headerSedenavLi">Others</li>
+                          <li className="">New Arrivals</li>
+                          <li className="">Gudgets</li>
+                          <li className="">Accessories</li>
+                          <li className="">Electronics</li>
+                          <li className="">Others</li>
                         </motion.ul>
                       )}
                     </div>

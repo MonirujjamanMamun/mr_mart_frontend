@@ -12,6 +12,7 @@ import OffBadge from './OffBadge';
 import toast from 'react-hot-toast';
 
 const Product = ({ _id, productName, des, badge, off, img, price, color }) => {
+  // console.log('product', _id);
   const dispatch = useDispatch();
   const idString = (_id) => {
     return String(_id).toLowerCase().split(' ').join('');
@@ -101,14 +102,14 @@ const Product = ({ _id, productName, des, badge, off, img, price, color }) => {
 };
 
 Product.propTypes = {
-  _id: PropTypes.string.isRequired,
-  productName: PropTypes.string.isRequired,
-  des: PropTypes.string.isRequired,
+  _id: PropTypes.number,
+  productName: PropTypes.string,
+  des: PropTypes.string,
   badge: PropTypes.bool,
   off: PropTypes.bool,
-  img: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  price: PropTypes.string,
+  color: PropTypes.string,
 };
 
 export default Product;

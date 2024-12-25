@@ -13,7 +13,7 @@ import settings from '../../../utils/sliderSetting/sliderSetting';
 const BestSaleProduct = () => {
   const bestSaleProducts = [
     {
-      _id: '1101',
+      _id: 1101,
       img: bestSaleBlueIphone,
       productName: 'Iphone',
       price: '250.00',
@@ -22,7 +22,7 @@ const BestSaleProduct = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1102',
+      _id: 1102,
       img: bestSalePrinter,
       productName: 'Printer',
       price: '200.00',
@@ -31,7 +31,7 @@ const BestSaleProduct = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1103',
+      _id: 1103,
       img: bestSaleSpeaker,
       productName: 'Speaker',
       price: '50.00',
@@ -40,7 +40,7 @@ const BestSaleProduct = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1104',
+      _id: 1104,
       img: bestSaleTablet,
       productName: 'Tablet',
       price: '250.00',
@@ -49,7 +49,7 @@ const BestSaleProduct = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '1105',
+      _id: 1105,
       img: bestSaleSmartWatch,
       productName: 'Smart Watch',
       price: '150.00',

@@ -8,7 +8,7 @@ import {
 const ProductOnSale = () => {
   const specialOffer = [
     {
-      _id: '201',
+      _id: 201,
       img: spfSpeaker,
       productName: 'Speaker',
       price: '35.00',
@@ -17,7 +17,7 @@ const ProductOnSale = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '202',
+      _id: 202,
       img: spfTablets,
       productName: 'Tablets',
       price: '180.00',
@@ -26,7 +26,7 @@ const ProductOnSale = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '203',
+      _id: 203,
       img: spfBlueIphone,
       productName: 'Iphone',
       price: '250.00',
@@ -35,7 +35,7 @@ const ProductOnSale = () => {
       des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
     },
     {
-      _id: '204',
+      _id: 204,
       img: spfRedIphone,
       productName: 'Iphone',
       price: '220.00',

@@ -1,6 +1,6 @@
 const specialOffer = [
   {
-    _id: '201',
+    _id: 201,
     //   img: spfOne,
     productName: 'Cap for Boys',
     price: '35.00',
@@ -9,7 +9,7 @@ const specialOffer = [
     des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
   },
   {
-    _id: '202',
+    _id: 202,
     //   img: newArrFour,
     productName: 'Tea Table',
     price: '180.00',
@@ -18,7 +18,7 @@ const specialOffer = [
     des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
   },
   {
-    _id: '203',
+    _id: 203,
     //   img: spfThree,
     productName: 'Headphones',
     price: '25.00',
@@ -27,7 +27,7 @@ const specialOffer = [
     des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.',
   },
   {
-    _id: '204',
+    _id: 204,
     //   img: spfFour,
     productName: 'Sun glasses',
     price: '220.00',
